@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Load the main data
-url = 'https://raw.githubusercontent.com/raflign/submission/dashboard/main_data.csv'
+url = 'https://raw.githubusercontent.com/raflign/submission/main/dashboard/main_data.csv'
 data = pd.read_csv(url)
 
 # Data Preprocessing (same as before)
