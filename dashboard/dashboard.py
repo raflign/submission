@@ -3,14 +3,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import os
 
-# Get the current directory where the script is located
-script_dir = os.getcwd()
-
-# Define path to the main_data.csv in the dashboard directory
-main_data_path = os.path.join(script_dir, 'main_data.csv')
-
 # Load the main data
-data = pd.read_csv(main_data_path)
+url = 'https://raw.githubusercontent.com/yourusername/yourrepo/main/data/myfile.csv'
+data = pd.read_csv(url)
 
 # Data Preprocessing (same as before)
 data['dteday'] = pd.to_datetime(data['dteday'])
